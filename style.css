@@ -1,0 +1,170 @@
+:root {
+  --steam-blue: #66b3ff;
+  --steam-dark: #0d1117;
+  --steam-mid: #1b2838;
+  --steam-card: #161b22;
+  --text-light: #c4c4c4;
+  --text-muted: #999999;
+  --accent-hover: #3385cc;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--steam-dark);
+  color: white;
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+}
+
+.custom-header {
+  background: #0b0f16;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--steam-blue);
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.nav-link {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: var(--steam-blue);
+}
+
+.hero {
+  background: linear-gradient(to bottom, var(--steam-dark), var(--steam-mid));
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.hero-logo {
+  max-width: 150px;
+  margin-bottom: 1.5rem;
+}
+.hero-title {
+  font-size: 2.5rem;
+  color: var(--steam-blue);
+  margin-bottom: 0.5rem;
+}
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+.hero-btn {
+  background: var(--steam-blue);
+  color: var(--steam-dark);
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.hero-btn:hover {
+  background: var(--accent-hover);
+  color: white;
+}
+.alt-btn {
+  background: transparent;
+  border: 2px solid var(--steam-blue);
+  color: var(--steam-blue);
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+.product-card {
+  background: var(--steam-card);
+  border-radius: 14px;
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+.product-card h2 {
+  color: var(--steam-blue);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.product-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.price-range {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+.product-btn {
+  background: var(--steam-blue);
+  color: var(--steam-dark);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.product-btn:hover {
+  background: var(--accent-hover);
+  color: white;
+}
+
+.why-us {
+  text-align: center;
+  background: #0d1117;
+  padding: 3rem 2rem;
+}
+.why-us h2 {
+  font-size: 2rem;
+  color: var(--steam-blue);
+  margin-bottom: 1rem;
+}
+.why-us ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+.why-us li {
+  margin: 0.5rem 0;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.footer {
+  background: var(--steam-dark);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.footer a {
+  color: var(--steam-blue);
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+}
