@@ -1,0 +1,20 @@
+:root {
+  --steam-blue: #66b3ff;
+  --steam-dark: #0d1117;
+  --steam-mid: #1b2838;
+  --steam-card: #161b22;
+  --text-light: #c4c4c4;
+  --text-muted: #999999;
+  --accent-hover: #3385cc;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--steam-dark);
+  color: white;
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+}
+
+/* Truncated for brevity — includes all previous style rules */
